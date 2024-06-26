@@ -1,4 +1,4 @@
-package Geometry;
+package homework7.Geometry;
 
 public class Circle implements Figure{
     private double r;

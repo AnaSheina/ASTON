@@ -1,10 +1,10 @@
-import Geometry.Circle;
-import Geometry.Rectangle;
-import Geometry.Triangle;
-import homework7.animals.Animal;
-import homework7.animals.Bowl;
-import homework7.animals.Cat;
-import homework7.animals.Dog;
+import homework7.Geometry.Circle;
+import homework7.Geometry.Rectangle;
+import homework7.Geometry.Triangle;
+import homework7.Animals.Animal;
+import homework7.Animals.Bowl;
+import homework7.Animals.Cat;
+import homework7.Animals.Dog;
 
 public class Main {
     public static void main(String[] args) {

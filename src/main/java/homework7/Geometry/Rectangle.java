@@ -1,4 +1,4 @@
-package Geometry;
+package homework7.Geometry;
 
 public class Rectangle implements Figure{
     private double sideOne;
