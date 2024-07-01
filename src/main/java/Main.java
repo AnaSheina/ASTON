@@ -28,32 +28,32 @@ public class Main {
         System.out.printf("Количество собак: %s\n", Dog.getCountDog());
         System.out.printf("Количество животных: %s\n", Animal.getCountAnimal());
         //создали массив котов
-        Cat[] cats = {cat1,cat2,cat3,cat4};
+        Cat[] cats = {cat1, cat2, cat3, cat4};
         //создали миску
         Bowl bowl1 = new Bowl(50);
         //покормили кота
-        cat1.eat(bowl1,5);
+        cat1.eat(bowl1, 5);
         //добавили в миску еду
         bowl1.addFood(10);
         //покормили массив котов и вывели информацию о их сытости
-        for (Cat any : cats){
-            any.eat(bowl1,30);
+        for (Cat any : cats) {
+            any.eat(bowl1, 30);
             System.out.println(any.catFull());
         }
 
         //Задание про фигуры
         //треугольник
-        Triangle tr1 = new Triangle(3,4,5,"Red","Green");
+        Triangle tr1 = new Triangle(3, 4, 5, "Red", "Green");
         tr1.printInfo();
         //прямоугольник
-        Rectangle r1= new Rectangle(7,5);
+        Rectangle r1 = new Rectangle(7, 5);
         r1.setBorderColor("Yellow");
         r1.setFillColor("White");
         r1.printInfo();
         //круг
-        Circle c1 = new Circle(5,"Purple","Black");
+        Circle c1 = new Circle(5, "Purple", "Black");
         c1.printInfo();
 
 
-        }
+    }
 }

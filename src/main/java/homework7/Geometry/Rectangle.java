@@ -41,7 +41,7 @@ public class Rectangle implements Figure{
         return sideOne*sideTwo;
     }
 
-    public void printInfo(){
-        System.out.printf("Периметр прямоуголника: %s\nПлощадь прямоуголника: %s\nЦвет границы прямоуголника: %s\nЦвет заливки прямоуголника: %s\n",perimeter(),square(),getBorderColor(),getFillColor());
+    public void printInfo() {
+        System.out.printf("Периметр прямоуголника: %s\nПлощадь прямоуголника: %s\nЦвет границы прямоуголника: %s\nЦвет заливки прямоуголника: %s\n", perimeter(), square(), getBorderColor(), getFillColor());
     }
 }

@@ -9,12 +9,13 @@ public class Cat extends Animal {
         countCat++;
         this.fullness = false;
     }
-    public static int getCountCat(){
+
+    public static int getCountCat() {
         return countCat;
     }
 
-    public String catFull(){
-        return (this.fullness?getName()+ " сыт.":getName() + " голоден.");
+    public String catFull() {
+        return (this.fullness ? getName() + " сыт." : getName() + " голоден.");
     }
 
     public boolean isFullness() {
@@ -22,22 +23,20 @@ public class Cat extends Animal {
     }
 
     @Override
-    public void animalRun(int m) {
-        System.out.println((m<=200)? getName() + " пробежал " + m + "м.":"Кот " + getName() + " не может пробежать такое расстояние.");
+    public void run(int m) {
+        int runLimit = 200;
+        System.out.println((m <= runLimit) ? getName() + " пробежал " + m + "м." : "Кот " + getName() + " не может пробежать такое расстояние.");
     }
 
     @Override
-    public void animalSwim(int m) {
+    public void swim(int m) {
         System.out.println("Кот " + getName() + " не умеет плавать.");
     }
 
-    public void eat(Bowl Bowl, int foodAmount){
-        if (Bowl.getFoodAmount() >= foodAmount){
+    public void eat(Bowl Bowl, int foodAmount) {
+        if (Bowl.getFoodAmount() >= foodAmount) {
             Bowl.decreaseFood(foodAmount);
-            this.fullness=true;
-        }
-        else {
-            this.fullness=false;
+            this.fullness = true;
         }
     }
 }
