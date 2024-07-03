@@ -27,24 +27,24 @@ public class Main {
 
         //Вызываем метод суммировния элементов массива
         System.out.print("Массив arr1: ");
-        ArrayControl(arr1);
+        arrayControl(arr1);
 
         System.out.print("Массив arr2: ");
-        ArrayControl(arr2);
+        arrayControl(arr2);
 
         System.out.print("Массив arr3: ");
-        ArrayControl(arr3);
+        arrayControl(arr3);
     }
 
-    public static void ArrayControl(String[][] arr) {
+    public static void arrayControl(String[][] arr) {
         try {
-            System.out.println("Сумма всех элементов массива: " + ArrayFunc(arr));
+            System.out.println("Сумма всех элементов массива: " + arrayFunc(arr));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println("Ошибка в массиве: " + e.getMessage());
         }
     }
 
-    public static int ArrayFunc(String[][] arr) throws MyArraySizeException, MyArrayDataException {
+    public static int arrayFunc(String[][] arr) throws MyArraySizeException, MyArrayDataException {
         if ((arr.length != 4) || (arr[0].length != 4)) {
             throw new MyArraySizeException("Массив неверного размера " + arr.length + "*" + arr[0].length + ". Должен быть массив 4*4.");
         }
