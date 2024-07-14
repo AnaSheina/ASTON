@@ -1,6 +1,6 @@
 public class Factorial {
-    public static long countFactorial(int num) {
-        long fac = 1;
+    public static int countFactorial(int num) {
+        int fac = 1;
         if (num < 0) {
             throw new IllegalArgumentException("Число должно быть положительным");
         }
